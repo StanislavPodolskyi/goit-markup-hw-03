@@ -1,4 +1,6 @@
 /* Common */
+
+
 :root {
   --primary-text-color: #757575;
   --primary-background-color: #ffffff;
@@ -29,6 +31,13 @@ ul {
 }
 
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color: tomato;
+}
+
 /* Header */
 .logo-header {
   font-family: Raleway, sans-serif;
@@ -55,6 +64,49 @@ ul {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+
+.site-nav {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 86px;
+  padding: 0;
+}
+
+.list-nav li {
+  margin-right: 50px;
+}
+
+.list-nav li:last-child {
+  margin-right: 0;
+}
+
+.list-contacts {
+  display: flex;
+  flex-direction: row;
+  margin-left: 334px;
+  padding: 0;
+}
+
+.list-contacts li:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.list-contacts li:nth-of-type(2) {
+  margin-right: 30px;
+}
+
+
+
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
