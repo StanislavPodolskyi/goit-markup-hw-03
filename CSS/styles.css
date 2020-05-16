@@ -145,8 +145,7 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
@@ -158,9 +157,10 @@ footer {
 }
 
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-right: 179px;
+  margin-top: 48px;
+  padding-bottom: 28px;
 }
 
 .address-container {
@@ -177,15 +177,14 @@ footer {
   letter-spacing: 0.03em;
   color: #2196f3;
 
-  margin-top: 48px;
   margin-bottom: 10px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-top: 0;
   padding: 0;
 }
 
 .address {
-  margin: 0;
+  margin-bottom: 9px;
+  margin-top: 0;
   padding: 0;
 
   font-style: normal;
@@ -207,8 +206,14 @@ footer {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin-bottom: 9px;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.link-footer:last-child {
+  margin: 0;
 }
 
 .footer-white-letters {
@@ -218,22 +223,23 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 21;
 
   color: #ffffff;
 }
 
 .join-us {
-  display: flex;
-  flex-direction: column;
-
+  display: block;
+  
   margin-right: 102px;
+  padding-top: 56px;
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin: 0;
-  padding: 0;
+  padding-top: 56px;
 }
 
 .button-footer {
@@ -263,9 +269,12 @@ footer {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 18px;
+  margin-bottom: 21px;
 }
 
 /* Studio */
@@ -335,7 +344,6 @@ h3 {
 
 .our-advantages ul {
   display: flex;
-  flex-direction: row;
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
@@ -477,37 +485,25 @@ h3 {
 .our-team  {
   display: flex;
   width: 1240px;
-  flex-direction: row;
-  
+    
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 94px;
 }
 
 .our-team .personal-details {
   margin-right: 30px;
+  width: 278px;
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .our-team .personal-details:last-child {
-  margin: 0;
-}
-
-.personal-data {
-  display: inline-block;
-  border-radius: 0 0 4px 4px;
-  height: 162px;
-  width: 278px;
-  background-color: #ffffff;
-
-  margin-bottom: 94px;
-}
-
-.personal-details {
-  display: flex;
-  flex-direction: column;
+  margin-right: 0;
 }
 
 .name {
@@ -520,8 +516,7 @@ h3 {
   text-transform: none;
 
   padding-top: 30px;
-  padding-bottom: 10px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .speciality {
@@ -532,17 +527,15 @@ h3 {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin: 0;
   padding-top: 0;
-  padding-bottom: 0;
+  margin-bottom: 28px;
 }
 
 .social-media {
   display: flex;
-  flex-direction: row;
 
   margin: 0;
-  padding: 0;
+  padding-bottom: 36px;
 }
 
 .our-team-section .link:hover,
@@ -556,7 +549,7 @@ h3 {
 .clients-title {
   margin: 0;
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -657,12 +650,10 @@ button:focus {
 }
 
 .portfolio-list li {
-  display: flex;
-  flex-direction: column;
   margin-right: 27px;
   margin-bottom: 30px;
   
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
 }
 
@@ -674,11 +665,6 @@ button:focus {
   margin-bottom: 0;
 }
 
-.portfolio-item-details {
-  
-  width: 380px;
-  height: 110px;
-}
 .portfolio-item {
   font-style: normal;
   font-weight: 700;
@@ -717,6 +703,7 @@ button:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   padding-left: 24px;
+  padding-bottom: 20px;
   margin: 0;
 
   color: var(--primary-text-color);
