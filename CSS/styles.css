@@ -92,9 +92,14 @@ ul {
 
 .list-nav {
   display: flex;
-  flex-direction: row;
+  
   margin-left: 86px;
   padding: 0;
+}
+
+.list-nav .link {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .list-nav li {
@@ -107,8 +112,8 @@ ul {
 
 .list-contacts {
   display: flex;
-  flex-direction: row;
-  margin-left: 334px;
+ 
+  margin-left: auto;
   padding: 0;
 }
 
@@ -234,8 +239,9 @@ footer {
 .button-footer {
   background-color: var(--accent-color);
 
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  justify-content: space-evenly;
+  
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -251,9 +257,7 @@ footer {
 
   color: #ffffff;
   margin: 0;
-  padding-left: 15px;
-  padding-right: 10px;
-}
+ }
 
 .developer {
   font-style: normal;
@@ -266,6 +270,10 @@ footer {
 
 /* Studio */
 
+.container-solutions {
+  text-align: center;
+}
+
 .solutions-title {
   color: var(--title-text-color);
 
@@ -273,7 +281,6 @@ footer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -285,16 +292,14 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: inline;
   
-  align-items: center;
+  display: inline-block;
+    
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
-
-  margin-left: 550px;
-      
+  
   background-color: var(--accent-color);
   color: #ffffff;
 }
