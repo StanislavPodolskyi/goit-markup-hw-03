@@ -1,5 +1,14 @@
 /* Common */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
   --primary-text-color: #757575;
@@ -14,6 +23,10 @@ body {
 
   font-family: Roboto, sans-serif;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -34,7 +47,7 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1240px;
   background-color: tomato;
 }
 
@@ -66,9 +79,11 @@ ul {
 }
 
 .site-nav {
-  width: 1200px;
+  width: 1240px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   display: flex;
   align-items: center;
@@ -103,10 +118,6 @@ ul {
 .list-contacts li:nth-of-type(2) {
   margin-right: 30px;
 }
-
-
-
-
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -194,6 +205,7 @@ footer {
 }
 
 /* Studio */
+
 .solutions-title {
   color: var(--title-text-color);
 
@@ -201,25 +213,32 @@ footer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 46px;
 }
 
-.place-order-button {
+.place-order-button {  
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
+  display: inline-block;
   align-items: center;
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
-
+  padding: 10px 32px 10px 32px;
+  margin-left: 400px;
+  margin-right: 400x;
+    
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
+/* Section Advantages */
 
 h2 {
   font-style: normal;
@@ -228,6 +247,9 @@ h2 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -237,14 +259,130 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 0;
 }
 
-.our-advantages .link:hover,
-.our-advantages .link:focus {
+.our-advantages ul {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.icon-antenna {
+  display: inline-block;
+  border-radius: 4px;
+  width: 278px;
+  height: 120px;
+  padding: 25px 106.34px 25px 106.34px;
+  background-color: #F5F4FA;
+  margin-right: 29px;
+  margin-bottom: 30px;
+}
+
+.icon-clock {
+  display: inline-block;
+  border-radius: 4px;
+  width: 278px;
+  height: 120px;
+  padding: 25px 105.54px 25px 105px;
+  background-color: #F5F4FA;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.icon-diagram {
+  display: inline-block;
+  border-radius: 4px;
+  width: 278px;
+  height: 120px;
+  padding: 33.2px 104px 33.11px 104px;
+  background-color: #F5F4FA;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.icon-astronaut {
+  display: inline-block;
+  border-radius: 4px;
+  width: 278px;
+  height: 120px;
+  padding: 25px 104px 25px 104px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.our-advantages .icon-astronaut:hover,
+.our-advantages .icon-astronaut:focus {
     background-color: var(--accent-color);
 }
 
+.our-advantages .icon-antenna:hover,
+.our-advantages .icon-antenna:focus {
+  background-color: var(--accent-color);
+}
+
+.our-advantages .icon-clock:hover,
+.our-advantages .icon-clock:focus {
+  background-color: var(--accent-color);
+}
+
+.our-advantages .icon-diagram:hover,
+.our-advantages .icon-diagram:focus {
+  background-color: var(--accent-color);
+}
+
+.our-advantages p {
+  width: 278px;
+  margin-top: 10;  
+}
+
+
+/* Section What we do */
+
+.what-we-do ul {
+  margin-top: 50px;
+  margin-bottom: 94px;
+
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.what-we-do li {
+  margin-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.what-we-do li:last-child {
+  margin: 0;
+}
+
 .our-activity {
+  display: inline-block;
+  height: 70px;
+  width: 380px;
+  padding-top: 34px;
+  padding-bottom: 27px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;  
+  margin-top: -70px;  
+  
+  background-color: rgba(47, 48, 58, 0.8); 
+  color: #ffffff;  
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -254,17 +392,65 @@ h3 {
   text-transform: uppercase;
 }
 
+
+/* Section Our Command */
+
 .our-command {
   background-color: #f5f4fa;
+}
+
+.our-team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.our-team  {
+  display: flex;
+  width: 1240px;
+  flex-direction: row;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.our-team .personal-details {
+  margin-right: 30px;
+}
+
+.our-team .personal-details:last-child {
+  margin: 0;
+}
+
+.personal-data {
+  display: inline-block;
+  border-radius: 0 0 4px 4px;
+  height: 162px;
+  width: 278px;
+  background-color: #ffffff;
+
+  margin-bottom: 94px;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
+  text-transform: none;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .speciality {
@@ -274,12 +460,29 @@ h3 {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
 }
 
 .our-command .link:hover,
 .our-command .link:focus {
   background-color: var(--accent-color);
 }
+
+
+/* Section Clients */
+
+
 
 .clients .link:hover,
 .clients .link:focus {
