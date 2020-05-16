@@ -129,8 +129,37 @@ ul {
 }
 
 /* Footer */
+
 footer {
   background-color: #2f303a;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 179px;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-footer {
@@ -141,19 +170,28 @@ footer {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
 
-.studio-footer {
-  color: #ffffff;
+  margin-top: 48px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .address {
+  margin: 0;
+  padding: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 
+  color: #ffffff;
+}
+
+.studio-footer {
   color: #ffffff;
 }
 
@@ -178,11 +216,32 @@ footer {
   color: #ffffff;
 }
 
-.button-footer {
-  background-color: var(--accent-color);
+.join-us {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 102px;
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.button-footer {
+  background-color: var(--accent-color);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.subscribe-title {
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
@@ -193,6 +252,9 @@ footer {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+
+  padding-left: 29px;
+  padding-right: 10px;
 }
 
 .developer {
@@ -225,15 +287,16 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: inline-block;
+  display: inline;
+  
   align-items: center;
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
-  margin-left: 400px;
-  margin-right: 400x;
-    
+
+  margin-left: 550px;
+      
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -261,6 +324,10 @@ h3 {
   text-transform: uppercase;
 
   margin-top: 0;
+}
+
+.advantages-title {
+  color: transparent;
 }
 
 .our-advantages ul {
@@ -393,9 +460,9 @@ h3 {
 }
 
 
-/* Section Our Command */
+/* Section Our Team */
 
-.our-command {
+.our-team-section {
   background-color: #f5f4fa;
 }
 
@@ -475,8 +542,8 @@ h3 {
   padding: 0;
 }
 
-.our-command .link:hover,
-.our-command .link:focus {
+.our-team-section .link:hover,
+.our-team-section .link:focus {
   background-color: var(--accent-color);
 }
 
@@ -520,6 +587,8 @@ h3 {
 .clients .link:focus {
     border-color: var(--accent-color);
 }
+
+
 
 /* Portfolio */
 

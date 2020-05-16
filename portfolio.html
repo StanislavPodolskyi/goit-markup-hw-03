@@ -17,13 +17,13 @@
                 <p class="logo-header"><span class="web-header">Web </span>Studio</p>
             </a>
     
-            <ul>
-                <li><a href="index.html" class="link">Студия</a></li>
+            <ul class="list-nav">
+                <li><a href="./index.html" class="link">Студия</a></li>
                 <li><a href="" class="link">Портфолио</a></li>
                 <li><a href="" class="link">Контакты</a></li>
             </ul>
     
-            <ul>
+            <ul class="list-contacts">
                 <li><a href=""><img src="./images/envelope.svg" alt="email"></a></li>
                 <li><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
                 <li><a href=""><img src="./images/Vector.svg" alt="phone icon"></a></li>
@@ -131,32 +131,41 @@
     </main>
 
     <footer>
-        <a href="">
-            <p class="logo-footer">Web <span class="studio-footer">Studio</span></p>
-        </a>
     
-        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+        <div class="footer-container">
     
-        <address>
-            <a href="info@example.com" class="link-footer">info@example.com</a>
-            <a href="+380991111111" class="link-footer">+38 099 111 11 11</a>
-        </address>
+            <div class="footer-contacts">
+                <a href="">
+                    <p class="logo-footer">Web <span class="studio-footer">Studio</span></p>
+                </a>
     
-        <p class="footer-white-letters">присоединяйтесь</p>
-        <ul>
-            <li><a href="" class="link" aria-label="Ссылка на Instagram"></a></li>
-            <li><a href="" class="link" aria-label="Ссылка на Twitter"></a></li>
-            <li><a href="" class="link" aria-label="Ссылка на Facebook"></a></li>
-            <li><a href="" class="link" aria-label="Ссылка на linkedin"></a></li>
-        </ul>
+                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
     
-        <p class="footer-white-letters">подписаться на рассылку</p>
+                <address class="address-container">
+                    <a href="info@example.com" class="link-footer">info@example.com</a>
+                    <a href="+380991111111" class="link-footer">+38 099 111 11 11</a>
+                </address>
+            </div>
     
-        <button type="button" class="button-footer">
-            <span class="subscribe">Подписаться</span>
-            <img src="./images/subscribe-icon.svg" alt="subscribe icon">
-        </button>
+            <div class="join-us">
+                <p class="footer-white-letters">присоединяйтесь</p>
+                <ul class="social-media-footer">
+                    <li><a href="" class="link" aria-label="Ссылка на Instagram"></a></li>
+                    <li><a href="" class="link" aria-label="Ссылка на Twitter"></a></li>
+                    <li><a href="" class="link" aria-label="Ссылка на Facebook"></a></li>
+                    <li><a href="" class="link" aria-label="Ссылка на linkedin"></a></li>
+                </ul>
+            </div>
     
+            <div class="subscribe">
+                <p class="footer-white-letters">подписаться на рассылку</p>
+    
+                <button type="button" class="button-footer">
+                    <span class="subscribe-title">Подписаться</span>
+                    <img src="./images/subscribe-icon.svg" alt="subscribe icon">
+                </button>
+            </div>
+        </div>
     
         <p class="developer">2020 | Developed by GoIT Students</p>
     
